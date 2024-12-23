@@ -1,0 +1,291 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat", serif; 
+}
+
+.container{
+    width:85%;
+    margin:0 auto;
+}
+.contact-container{
+    background-color: #F8F8F8;
+}
+.contact-details{
+  display:grid;
+  grid-template-columns:8fr 4fr;
+  /* font-family: "Poppins", serif; */
+
+}
+.phone-email{
+    display:flex;
+}
+
+.con{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    padding:0px 10px;
+}
+.phone{
+    width:40%;
+    justify-content: end;
+}
+.phone::after{
+    content:"|";
+    font-weight:300;
+    padding-left:10px;
+}
+.con .contact-number,.con .emailid,.con .admin{
+    text-decoration: none;
+    color:#1f1961;
+    font-weight:600;
+}
+.enquiry-box{
+    padding:10px;
+}
+.logo-container{
+    padding:10px 0px;
+}
+/**** navigation *****/
+.navigation{
+    background-color:#1f1961;
+    position:sticky;
+    top:0px;
+}
+.nav-items {
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+}
+.navbar li a{
+    text-decoration: none;
+    color:white;
+    font-size:16px;
+}
+.navbar li{
+    list-style-type: none;
+    padding:10px 30px;
+    /* font-family: "Poppins", serif; */
+}
+.navbar li:hover{
+    background-color:#f56100;
+}
+/******** banner container ***********/
+.banner-container{
+    background:url("../images/banner-img.png");
+    background-size: contain;
+    height:500px;
+}
+/****** about-us -container*****/
+.about-us-container{
+    background-color: #EDF1FF;
+    padding:30px 0px;
+}
+.about-us-title{
+    margin:0px;
+    color:#1f1961;
+    font-weight: 800;
+    font-size:44px;
+    
+}
+.about-us-text{
+    display:grid;
+    grid-template-columns: 8fr 4fr;
+}
+.about-us-info{
+    padding-right:30px;
+}
+.about-us-info p{
+    font-size:20px;
+    line-height:30px;
+    font-weight:400;
+}
+.chairman-info{
+    text-align:center;
+    border-left: 1px solid rgb(150, 150, 150);
+}
+.chairman{
+    color:#1f1961;
+}
+.chairman-name{
+    color:#1f1961;
+    font-weight:300;
+}
+.quotation{
+    margin-top:15px;
+}
+.quote{
+    font-size:32px;
+    font-weight:600;
+    color:#1a1362;
+    line-height: 46px;
+    margin-top:70px;
+}
+.quote-line{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+.quotation p{
+    text-align:right;
+    font-size:24px;
+}
+/******* courses offered ********/
+.courses-offered-container{
+    margin-bottom:100px;
+}
+.courses-offered .title{
+    color:#f56100;
+    font-weight:800;
+    font-size:48px;
+}
+.slides{
+    display:grid;
+    grid-template-columns: 6fr 6fr;
+}
+.courses-offered .image{
+    background-image:url("../images/svceptr/ai-ds-image.jpg");
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.courses-offered .content .sub-title{
+    font-size:38px;
+   margin:30px 0 0 0;
+}
+.courses-offered .content .desc{
+    font-size:20px;
+    margin:25px 0 0 0;
+}
+.courses-offered .btn{
+    padding:10px 20px;
+    font-size:18px;
+    border:none;
+    color:#2C2C2C;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    margin:35px 0px 35px 0px;;
+}
+/********* facilities *******/
+.facilities-container{
+    background-color:#1f1961;
+    padding:30px 0px 80px 0px;
+}
+.facilities-container .facilities-div .title{
+    font-size:50px;
+    color:white;
+    font-weight:700;
+}
+.facilities-container .facilities-div  .add{
+    font-size:36px;
+    font-weight:500;
+    margin-left:10px;
+}
+.facilities{
+    display:grid;
+    grid-template-columns: 7fr 5fr;
+}
+.facilities .img img{
+     border-radius: 20px;
+}
+.facility-titles{
+    padding:0px;
+}
+.facility-titles li{
+    list-style-type:none;
+    color:#ffffff;
+    font-size:30px;
+    font-weight:500;
+    padding:16px 0px;
+}
+.facility-titles li a{
+    padding:12px 35px;
+}
+.facility-titles li a:hover{
+    cursor: pointer;
+    background-color:rgba(127, 126, 126,0.6);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.facilities li:first-child a{
+    /* padding:14px 50px; */
+    background-color:#f56100;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;;
+}
+/*********gallery section***********/
+.gallery .title{
+    color:#1f1961;
+    font-size:52px;
+    font-weight:800;
+}
+ .gallery .img{
+    height:500px;
+} 
+/******anti-ragging policy ********/
+.anti-ragging-policy-container{
+    padding:45px 0px;
+    background-color:#f56100;
+}
+.anti-ragging-policy{
+   display:grid;
+   grid-template-columns: 3fr 9fr;
+}
+.anti-ragging-policy .title{
+    display:inline-block;
+    font-size:32px;
+    color:#ffffff;
+}
+.anti-ragging-policy .desc-box .desc{
+    font-size:20px;
+    color:#ffffff;
+    font-weight:500;
+    line-height: 32px;
+    margin:0;
+}
+  /*******footer container********/
+  .footer-container{
+    background-color:#1f1961;
+    padding:50px 0px;
+  }
+  .footer-sec{
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+  .footer-sec .contact-us{
+    padding:0;
+  }
+  .footer-sec .contact-us li{
+    list-style-type:none;
+  }
+  .contact-us-sec .title,.useful-link-sec .title{
+    margin:0px;
+    color:#ffffff;
+    font-size:32px;
+  }
+  .useful-link-sec .useful-links{
+    padding:0;
+  }
+  .useful-link-sec .useful-links li{
+    list-style-type: none;
+    padding:8px 0px;
+    font-size:20px;
+  }
+  .useful-link-sec .useful-links li a{
+    text-decoration: none;
+    color:rgba(255, 255, 255,0.7);
+  }
+  /******copyrights******/
+  .copy-rights-container{
+    background-color:#15104F;
+    padding:10px 0px;
+  }
+  .copy-rights{
+      display:grid;
+      grid-template-columns: 4fr 4fr 4fr;
+      color:rgba(255, 255, 255,0.7);
+  }
+  .copy-rights p{
+    display: inline-block;
+  }
